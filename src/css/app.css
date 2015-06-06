@@ -1,5 +1,7 @@
 @import url('bootstrap.css');
+@import url('header.css');
 @import url('intro.css');
+@import url('rooms.css');
 
 
 /* -----------------
@@ -17,40 +19,38 @@ h2{
 
 p, h4, h5, h6{
 	font-family: 'Lora', serif;
+	color: #666666;
+}
+
+
+/* -----------------
+General styles
+-------------------*/
+
+body{
+	background-color: #f2f2f2;
+}
+
+section{
+	margin-top: 40px;
+}
+
+.content{
+	margin-top: 40px;
+}
+
+.thumbs{
+	margin-top: 40px;
 }
 
 figcaption>h3{
 	font-size: 18px;
 	font-weight: bold;
 	color: #1c5c56;
-
 }
 
-
-.thumbs{
-	margin-top: 40px;
-}
-
-/* -----------------
-General styles
--------------------*/
-
-section{
-	margin-top: 40px;
-}
-
-
-header{
-	background-color: #f2f2f2;
-	/*padding-bottom: 40px;*/
-	color: #f2f2f2;
-	text-align: center;
-	width: 100%;
-	padding: 100px 0px 40px 0px;
-}
-
-body{
-	background-color: #f2f2f2;
+figcaption>p{
+    margin-top: 10px;
 }
 
 
