@@ -6,7 +6,7 @@
 heandings and fonts 
 -------------------*/
 
-h1, h2{
+h1, h2, h3{
 	font-family: 'Open Sans', sans-serif;
 	color: #1c5c56;
 }
@@ -17,10 +17,27 @@ h2{
 
 p, h4, h5, h6{
 	font-family: 'Lora', serif;
-	line-height: 1.6;
+}
+
+figcaption>h3{
+	font-size: 18px;
+	font-weight: bold;
+	color: #1c5c56;
+
 }
 
 
+.thumbs{
+	margin-top: 40px;
+}
+
+/* -----------------
+General styles
+-------------------*/
+
+section{
+	margin-top: 40px;
+}
 
 
 header{
