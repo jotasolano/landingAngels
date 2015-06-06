@@ -1,0 +1,125 @@
+@import url('bootstrap.css');
+@import url('intro.css');
+
+
+/* -----------------
+heandings and fonts 
+-------------------*/
+
+h1, h2{
+	font-family: 'Open Sans', sans-serif;
+	color: #1c5c56;
+}
+
+h2{
+	font-size: 36px;
+}
+
+p, h4, h5, h6{
+	font-family: 'Lora', serif;
+	line-height: 1.6;
+}
+
+
+
+
+header{
+	background-color: #f2f2f2;
+	/*padding-bottom: 40px;*/
+	color: #f2f2f2;
+	text-align: center;
+	width: 100%;
+	padding: 100px 0px 40px 0px;
+}
+
+body{
+	background-color: #f2f2f2;
+}
+
+
+/* -------------
+contact 
+--------------*/
+
+.contact{
+	padding-top: 40px;
+	color: #575756;
+}
+
+.contact>h2{
+	margin-top: 40px;
+	text-align: center;
+}
+
+.contact-form {
+	margin: 20px 0px 80px 0px;
+}
+
+.form-control{
+	height: 40px;
+	border-radius: 1px;
+}
+
+.form-control:focus {
+  border-color: #003976;
+  box-shadow: 0px 1px 1px 0pvx rgba(0,0,0,0.50);
+}
+
+
+/* -------------
+box 
+--------------*/
+
+.bs-callout {
+  margin: 10px 0;
+  border: 1px solid #eee;
+  border-radius: 1px;
+}
+
+.bs-callout div{
+	font-size: 14px;
+}
+
+.item-text{
+	margin: 0px 10px 0px 65px;
+	background-color: #d9d9d9;
+	border-color: #003976;
+  	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.70);
+}
+
+.item-text>p{
+	padding: 10px 0px 5px 0px;
+}
+
+.item-inputs{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.item-inputs input{
+	width: 55px;
+	height: 35px;
+}
+
+.item-inputs label{
+	margin-right: 20px;
+}
+
+footer{
+	bottom: 0;
+	width: 100%;
+	height: 120px;
+	margin-top: 80px;
+	background-color: #003976;
+}
+
+.text-footer-container{
+	margin-top: 60px;
+	text-align: center;
+	color: #f2f2f2;
+}
+
+.img-footer-container{
+	margin-top: 30px;
+	width: 73px;
+}

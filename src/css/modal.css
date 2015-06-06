@@ -1,0 +1,67 @@
+/*Modal*/
+
+#modal {
+     visibility: hidden;
+     position: absolute;
+     margin-top: 600px;
+     left: 0px;
+     top: 0px;
+     width:100%;
+     height:100%;
+     text-align:center;
+     z-index: 1000;
+}
+
+.modal-title{
+	text-align: left;
+	color: #575756;
+}
+.modal-body {
+	text-align: left;
+}
+
+.modal-body-check-data>h3 {
+	color: #003976;
+}
+
+.modal-body-check-products>h3 {
+	color: #003976;
+}
+
+.modal-body-check-products>h4 {
+	padding-left: 0px;
+}
+
+.review-item, .number-review, .text-review{
+	padding-left: 0px;
+}
+
+.review-item{
+	border-bottom: 2px dotted #d9d9d9;
+}
+
+.comments{
+	margin-top: 40px;
+}
+
+textarea {
+    resize: none;
+}
+
+.modal-footer{
+	text-align: center;
+}
+
+.send-quote{
+	margin-top: 20px;
+	background-color: #003976;
+	width: 250px;
+	border-radius: 0px;
+	font-size: 18px;
+}
+
+.confirmation{
+	text-align: center;
+	visibility: hidden;
+	display: none;
+}
