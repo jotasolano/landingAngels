@@ -2,6 +2,15 @@
 	background-color: #c4d9ba;
 }
 
+#special-rooms-content{
+	margin-top: 20px;
+}
+
+.image-wheel-container{
+	max-width: 80px; 
+}
+
+
 table{
 	margin-top: 40px;
 	border: none;
