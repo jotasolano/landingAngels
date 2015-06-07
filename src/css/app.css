@@ -2,6 +2,7 @@
 @import url('header.css');
 @import url('intro.css');
 @import url('rooms.css');
+@import url('location.css');
 
 
 /* -----------------
@@ -20,6 +21,12 @@ h2{
 p, h4, h5, h6{
 	font-family: 'Lora', serif;
 	color: #666666;
+}
+
+.subtitle>h3{
+	font-family: 'Lora', serif;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 
