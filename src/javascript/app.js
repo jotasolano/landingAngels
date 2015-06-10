@@ -1,6 +1,14 @@
 function init(){
 	scrollNav();
 	navColapse();
+  startDatepicker();
+
+
+}
+
+// Init Date Pickers
+function startDatepicker(){
+   $('.datetimepicker').datetimepicker();
 }
 
 // Animate Scroll
@@ -27,4 +35,4 @@ function navColapse(){
 	});
 }
 
-module.exports = init;
+init();
