@@ -2,8 +2,6 @@ function init(){
 	scrollNav();
 	navColapse();
   startDatepicker();
-
-
 }
 
 // Init Date Pickers

@@ -40,7 +40,12 @@
 
 
 /*Override collapse width*/
-@media (max-width: 1027px) {
+@media (max-width: 960px) {
+
+    .navbar-default{
+        height: 50px;
+    }
+
     .navbar-header {
         float: none;
     }
