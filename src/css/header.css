@@ -51,11 +51,14 @@ header{
 	float: left;
 	display: inline-block;
 	width: 255px;
+	height: 80px;
 }
+
 .reserve-box .large-container{
 	float: left;
 	display: inline-block;
 	width: 340px;
+	height: 80px;
 }
 
 .reserve-box .form-group{
@@ -63,7 +66,7 @@ header{
 }
 
 .reserve-box h3{
-	margin-top: 0;
+	margin: 0px 0px 0px 20px;
 	color: #f2f2f2;
 	font-weight: bold;
 	font-size: 27px;
@@ -79,9 +82,13 @@ header{
 	width: 150px;
 }
 
+.reserve-box .btn-container{
+	margin-top: 20px;
+}
+
 .btn-paradise{
-	margin-top: 30px;
-	font-size: 16px;
+	padding: 10px;
+	font-size: 18px;
 	background-color: #1c5c56;
 	color: #f2f2f2;
 	font-weight: bold;

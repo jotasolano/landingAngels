@@ -4,6 +4,7 @@
 @import url('intro.css');
 @import url('rooms.css');
 @import url('location.css');
+@import url('reservation.css');
 @import url('movil.css');
 
 
@@ -17,7 +18,7 @@ h1, h2, h3{
 }
 
 h2{
-	font-size: 36px;
+	font-size: 30px;
 }
 
 p, h4, h5, h6{

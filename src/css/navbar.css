@@ -5,6 +5,7 @@
 	border-top-style: none;
 	height: 100px;
 	opacity: 0.9;
+    margin: 0px;
 
 	-webkit-box-shadow: 0px 0px 10px 0px rgba(34,34,34,0.6);
 	-moz-box-shadow: 0px 0px 10px 0px rgba(34,34,34,0.6);
