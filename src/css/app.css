@@ -3,6 +3,7 @@
 @import url('header.css');
 @import url('intro.css');
 @import url('rooms.css');
+@import url('activities.css');
 @import url('location.css');
 @import url('reservation.css');
 @import url('movil.css');
@@ -47,7 +48,7 @@ body{
 }
 
 section{
-	margin-top: 40px;
+	/*margin-top: 40px;*/
 }
 
 .content{
@@ -90,6 +91,7 @@ contact
 .form-control{
 	height: 40px;
 	border-radius: 1px;
+	background-color: #e1e1e1;
 }
 
 .form-control:focus {
@@ -145,6 +147,26 @@ footer{
 	background-color: #c4d9ba;
 }
 .img-footer-container{
-	margin-top: 30px;
-	width: 100px;
+	margin-top: 80px;
+	width: 200px;
+}
+
+
+@media (max-width: 992px) {
+
+  .image-section img, figure img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  figure figcaption{
+  	text-align: center;
+  }
+
+  .img-footer-container{
+  	max-width: 120px;
+  	margin-top: 115px;
+
+  }
 }

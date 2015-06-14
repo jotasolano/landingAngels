@@ -40,3 +40,10 @@ th{
 	color: #1c5c56;
 	background-color: #f2f2f2;
 }
+
+
+@media (max-width: 992px) {
+	.img-room{
+		margin-top: 20px;
+	}
+}

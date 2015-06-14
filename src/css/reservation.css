@@ -1,3 +1,7 @@
  .btn-submit-container a{
  	margin-top: 70px	
  }
+
+textarea {
+   resize: none;
+}
