@@ -15,7 +15,7 @@ function init(message){
 	                "type": "to"
 	            }
 	        ],
-	        "subject": "Reservation Request",
+	        "subject": "Reservation Request - " + message.email,
 	        "from_name": "Sitio Web",
 	        "merge": true,
 			"merge_language": "handlebars",

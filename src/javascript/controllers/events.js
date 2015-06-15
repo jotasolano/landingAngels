@@ -1,11 +1,18 @@
 var Send = require("./send.js");
+var Validar = require("./validate.js");
+
+var errorModal = require("../views/error.eco");
+var errorModalHTML = document.getElementById('errorModal')
+
+var successModal = require("../views/success.eco");
+var successModalHTML = document.getElementById('successModal')
 
 function init(){
-	console.log("hi")
-	scrollNav();
+	animateScroll();
 	navColapse();
 	startDatepicker();
 	sameInpustValues()
+	Validar();
 	sendInformation()
 }
 
@@ -15,8 +22,8 @@ function startDatepicker(){
 }
 
 // Animate Scroll
-function scrollNav() {
-  $('.nav a').click(function(){  
+function animateScroll() {
+  $('.nav a, #btn-header').click(function(){  
     //Toggle Class
     $(".active").removeClass("active");      
     $(this).closest('li').addClass("active");
@@ -38,6 +45,7 @@ function navColapse(){
 	});
 }
 
+// inputs dates equal values
 function sameInpustValues(){
 	$('.in').change(function() {
 		$('.in').val(this.value)
@@ -47,20 +55,26 @@ function sameInpustValues(){
 	});
 }
 
+// Send information using send.js
 function sendInformation(){
 	$('#send-request').click(function(){
-		var values = getvalue();
-		Send(values);
+		var values = getvalues();
+		if(validateValues()){
+			successSend()
+			Send(values);
+		}
 	})
 }
 
-function getvalue(){
+// Get values of request
+function getvalues(){
 	var checkin = $('#checkin').val();
 	var checkout = $('#checkout').val();
 	var name = $('#name').val();
 	var email = $('#email').val();
-	var commet = $('#comment').val();
+	var commet = $('#commet').val();
 	var guests = $('#guests').val();
+
 
 	var mensaje = { 
 		checkin: checkin,
@@ -73,10 +87,57 @@ function getvalue(){
 	return mensaje
 }
 
+function validateValues(){
+	var name = document.getElementById('name');
+	var email = document.getElementById('email');
+	var guests = document.getElementById('guests');
 
+	var mensaje = {};
 
+	if (hasClass(name, "valid")) {
+		if (hasClass(email, "valid")) {
+			if (hasClass(guests, "valid")) {
+				return true
+			} else {
+				mensaje = { text:"The guests field is required" }
+				errorModalHTML.innerHTML = errorModal(mensaje);
+				$('#errorModal').modal('show');
+				guests.focus();
+				return false
+			}
+		} else {
+			mensaje = { text:"The email field is required" }
+			errorModalHTML.innerHTML = errorModal(mensaje);
+			$('#errorModal').modal('show');
+			email.focus();
+			return false
+		}
+	}else{
+		mensaje = { text:"The name field is required" }
+		errorModalHTML.innerHTML = errorModal(mensaje);
+		$('#errorModal').modal('show');
+		name.focus();
+		return false
+	}
+}
 
+function successSend(){
 
+	var mensaje = { text:"We have received your information !! \n We will contact you to provide more information." }
+	successModalHTML.innerHTML = successModal(mensaje);
+	$('#successModal').modal('show');
+
+	$('#checkin').val("");
+	$('#checkout').val("");
+	$('#name').val("");
+	$('#email').val("");
+	$('#commet').val("");
+	$('#guests').val("");
+}
+
+function hasClass(element, cls) {
+    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+}
 
 
 module.exports = init;

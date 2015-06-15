@@ -2,6 +2,23 @@
  	margin-top: 70px	
  }
 
-textarea {
-   resize: none;
-}
+ .reservation .title{
+ 	margin-bottom: 40px;
+ }
+
+ .reservation input{
+ 	background-color: #c4d9ba;
+ }
+
+ .reservation textarea{
+ 	resize: none;
+ 	background-color: #c4d9ba;
+ }
+
+ .reservation .datepicker{
+ 	background-color: #c4d9ba;
+ }
+
+ .reservation label{
+ 	color: #1c5c56
+ }
