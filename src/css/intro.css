@@ -5,3 +5,11 @@
 .intro-text>h4 {
 	line-height: 1.7;
 }
+
+
+@media (max-width: 992px) {
+
+	.intro{
+		margin-top: 0px;
+	}
+}
