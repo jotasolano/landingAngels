@@ -10,6 +10,16 @@
     <link rel="stylesheet" href="http://angelsecolodge.com/libs/pickdate/classic.date.css">
     <script src="http://angelsecolodge.com/libs/pickdate/picker.js"></script>
     <script src="http://angelsecolodge.com/libs/pickdate/picker.date.js"></script>
+    <!-- NivoLightbox -->
+    <link rel="stylesheet" href="http://angelsecolodge.com/libs/nivo/nivo-lightbox.css" type="text/css" />
+    <link rel="stylesheet" href="http://angelsecolodge.com/libs/nivo/themes/default/default.css" type="text/css" />
+    <script src="http://angelsecolodge.com/libs/nivo/nivo-lightbox.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+          $('.thumb-nivo').nivoLightbox();
+      });
+  </script>
     <link rel="icon" type="image/png" href="./images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="./images/android-chrome-192x192.png" sizes="192x192">
     <link rel="icon" type="image/png" href="./images/favicon-96x96.png" sizes="96x96">
@@ -75,361 +85,38 @@
       </div>
     </nav>
     
-    <!-- HEADER -->
-    <header id="header">
-      <div class="container-fluid">
+    <section id="gallery" class="gallery">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-12 col-md-12 header-content">
-            <div class="col-lg-12 col-md-12 header-image">
-              <div class="col-lg-12 col-md-12 "><h2>RELAX IN THE PACIFIC</h2></div>
+          <div class="col-lg-12 col-md-12 col-xs-12 gallery-container">
+            <div class="col-lg-2 col-md-2 col-xs-12">
+              <a class="img-responsive thumb-nivo" href="./images/imgIntroEcolodge.png" data-lightbox-gallery="gal1">
+                <img class="img-responsive" src="./images/imgIntroEcolodge.png" alt="" />
+              </a>
             </div>
-          </div>
-          <div class="reserve-box">
-            <div class="midle-container">
-              <h3>MAKE A<br>RESERVATION</h3>
+
+            <div class="col-lg-2 col-md-2 col-xs-12">
+              <a class="img-responsive thumb-nivo" href="./images/imgAct1Ecolodge.png" data-lightbox-gallery="gal1">
+                <img class="img-responsive" src="./images/imgAct1Ecolodge.png" alt="" />
+              </a>
             </div>
-            <div class="large-container">
-              <form>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">CHECK IN</label>
-                  <input class="form-control checkInBox datepicker in" id="" placeholder="Check in">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">CHECK OUT</label>
-                  <input class="form-control checkInBox datepicker out" id="" placeholder="Check out">
-                </div>
-              </form>
+
+            <div class="col-lg-2 col-md-2 col-xs-12">
+              <a class="img-responsive thumb-nivo" href="./images/imgAct2Ecolodge.png" data-lightbox-gallery="gal1">
+                <img class="img-responsive" src="./images/imgAct2Ecolodge.png" alt="" />
+              </a>
             </div>
-            <div class="midle-container">
-              <div class="btn-container">
-                <a href="#reservation" class="btn btn-default btn-paradise">TAKE ME TO PARADISE</a>
-              </div>
+
+            <div class="col-lg-2 col-md-2 col-xs-12">
+              <a class="img-responsive thumb-nivo" href="./images/imgAct3Ecolodge.png" data-lightbox-gallery="gal1">
+                <img class="img-responsive" src="./images/imgAct3Ecolodge.png" alt="" />
+              </a>
             </div>
+
           </div>
         </div>
       </div>
-    </header>
-    <!-- ^ HEADER ^ -->
-
-    <div id="content">
-
-      <!-- INTRO -->
-      <section class="intro" id="intro">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 col-md-12">
-              <div class="col-lg-6 col-md-6 intro-text">
-                <h4>Formerly known as <i>“La Norma Guanacaste”</i>, Angels Ecolodge comprises over 9 acres (430 000 sqr. ft.), of Tropical Dry Forest and it’s so much more than just a guest room.
-
-                Our low impact lodging option is based on sustainability practices that help protect the fragile areas in the surroundings and encourage sustainable economic community development, it is owned and managed locally. It offers turists a different experience, a close up with culture and nature.</h4>
-              </div>
-              <div class="col-lg-6 col-md-6 image-section">
-                <img class="img-responsive" src="./images/imgIntroEcolodge.png">
-              </div>
-            </div>
-            <div class="col-lg-12 col-md-12 thumbs">
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> 
-                <figure>
-                  <figcaption>
-                    <h3>A delicious restaurant</h3>
-                  </figcaption>
-                  <img class="img-responsive" src="./images/imgRestaurantEcolodge.png" alt="image of angels ecolodoge restaurant">
-                  <figcaption>
-                    <p>A restaurant &amp; bar that will offer you both typical and international cuisine, where you can lay back and relax while having an ice cold beer or a fresh cocktail.</p>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> 
-                <figure>
-                  <figcaption>
-                    <h3>Pool &amp; Jacuzzi</h3>
-                  </figcaption>
-                  <img class="img-responsive" src="./images/imgPoolEcolodge.png" alt="image of angels ecolodge jacuzzi">
-                  <figcaption>
-                    <p>Relax and read a book on the jacuzzi or strech a little on the swimming pool, always surrounded by our exhuberant and beautiful wildlife.</p>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> 
-                <figure>
-                  <figcaption>
-                    <h3>A vast forest around you</h3>
-                  </figcaption>
-                  <img class="img-responsive" src="./images/imgForestEcolodge.png" alt="">
-                  <figcaption>
-                    <p>Meet the Howler Monkey, the Black Iguana, the White-throated Magpie-Jay and the Turquoise-browed Motmot, amongs many other species of animals and plants.</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ^ INTRO ^ -->
-
-      <!-- ROOMS -->
-      <section class="rooms" id="rooms">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 col-md-12">
-              <div class="text-center title">
-                <h2>ROOMS &amp; RATES</h2>
-              </div>
-            </div>
-            <div class="col-lg-12 col-md-12 col-xs-12 content">
-              <div class="col-lg-6 col-md-6 col-xs-12 intro-text">
-                <h4>We have 10 extraordinary bungalows that blend in with the nature around our Ecolodge. Here you can enjoy the peaceful and warm atmosphere. Our bungalows are built with materials from the “finca”, keeping peace with the environment.</h4>
-                <div id="special-rooms-content col-lg-12 col-md-12 col-xs-12">
-                  <div class="col-lg-3 col-md-3 col-xs-3 image-wheel-container">
-                    <img class="img-responsive" src="./images/imgWheelEcolodge.png">
-                  </div>
-                  <div class="col-lg-9 col-md-9 col-xs-9">
-                    <p>We offer rooms with special access for people with physical disabilities who have difficulties using stairs. Contact us to know more.</p>
-                  </div>
-                </div>                
-              </div>
-              <div class="col-lg-6 col-md-6 col-xs-12 image-section img-room">
-                <img class="img-responsive" src="./images/imgRoomEcolodge.png">
-              </div>
-            </div>
-            <div class="col-md-6 col-md-offset-3 table-responsive table-rates">
-              <table class="table">
-
-                <tr>
-                  <th>Season</th>
-                  <th colspan="3">Occupancy</th>
-                </tr>
-
-                <tr class="table-sub">
-                  <td>Low<sup>1</sup></td>
-                  <td>Single</td>
-                  <td>Double</td>
-                  <td>Extra Person</td>
-                </tr>
-
-                <tr class="table-data">
-                  <td></td>
-                  <td>$45 USD</td>
-                  <td>$65 USD</td>
-                  <td>$10 USD/Person</td>
-                </tr>
-                
-                <tr class="table-sub">
-                  <td>High<sup>2</sup></td>
-                  <td>Single</td>
-                  <td>Double</td>
-                  <td>Extra Person</td>
-                </tr>
-
-                <tr class="table-data">
-                  <td></td>
-                  <td>$50 USD</td>
-                  <td>$75 USD</td>
-                  <td>$10 USD/Person</td>
-                </tr>
-
-              </table>
-              <h5><sup>1</sup>May-November excluding July / <sup>2</sup>December-April + July</h5>
-
-            </div>
-            <div class="col-lg-12 col-md-12 text-center subtitle">
-              <h3>Would you like to see more?</h3>
-              <button class="btn btn-default btn-gallery" type="submit">VIEW GALLERY</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ^ ROOMS ^ -->
-
-      <!-- ACTIVITIES -->
-      <section class="activities" id="activities">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-xs-12">
-              <div class="text-center title">
-                <h2>ACTIVITIES</h2>
-              </div>
-            </div>
-            <div class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2 text-center subtitle">
-              <h3>Make the most out of your stay by engaging in convenient exciting and new experiences.</h3>
-            </div>
-            <div class="col-lg-12 col-md-12 col-xs-12 thumbs">
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> 
-                <figure>
-                  <figcaption>
-                    <h3>The Beach</h3>
-                  </figcaption>
-                  <img class="img-responsive" src="./images/imgAct1Ecolodge.png" alt="">
-                  <figcaption>
-                    <p>From our location you can easily visit a number of the beautiful Pacific Coast beaches of Costa Rica, including some of the most beautiful in Central America. Nearby beaches are: Playa Junquillal (10 minutes away!), Playa Avellanas, Negra, Frijolar, Lagarto, and many others!</p>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> 
-                <figure>
-                  <figcaption>
-                    <h3>Surfing</h3>
-                  </figcaption>
-                  <img class="img-responsive" src="./images/imgAct2Ecolodge.png" alt="">
-                  <figcaption>
-                    <p>The Pacific Coast offers a lot to surfers, throughout the year swells come in both from the Northern and Sourther Hemisfere, which means you can easily enjoy great waves all year long, in Junquillal or Avellanas.</p>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> 
-                <figure>
-                  <figcaption>
-                    <h3>Watersports</h3>
-                  </figcaption>
-                  <img class="img-responsive" src="./images/imgAct3Ecolodge.png" alt="">
-                  <figcaption>
-                    <p>Watersports such as scuba diving, snorkeling and fishing are available, take a chance to do one of these activities and explore the most beautiful things the ocean has to offer.</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-
-
-            <div class="col-lg-12 col-md-12 thumbs">
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> 
-                <figure>
-                  <figcaption>
-                    <h3>Turtle Nesting</h3>
-                  </figcaption>
-                  <img class="img-responsive" src="./images/imgAct4Ecolodge.png" alt="">
-                  <figcaption>
-                    <p>During the months of October through March, see the Endangered Leather Back Turtles or during the months of May through August, the smaller Ridley Turtles lay their eggs.  They seem to prefer well moon-light nights at high tide.  </p>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> 
-                <figure>
-                  <figcaption>
-                    <h3>Canpy/Horseback Riding</h3>
-                  </figcaption>
-                  <img class="img-responsive" src="./images/imgAct5Ecolodge.png" alt="">
-                  <figcaption>
-                    <p>Right in front of Angels Ecolodge you can find PuraAventura, a tour company that offers you an unforgettable experience. Zip lining 11 cables, giving you an exhilarating experience. If you don’t like the heights you can try the horseback riding or a guided tour of mountain biking.<br><br> 
-                    <strong>Booking the tours with us will get you special deals!</strong></p>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> 
-                <figure>
-                  <figcaption>
-                    <h3>Fishing</h3>
-                  </figcaption>
-                  <img class="img-responsive" src="./images/imgAct6Ecolodge.png" alt="">
-                  <figcaption>
-                    <p>Near Angels Ecolodge you can enjoy doing quite a few types of fishing such as Deep-sea, Coastal and Surf fishing, where you can find several types of species like the Tuna, Red Snapper, Rock Fish or Dorado</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </section>
-      <!-- ^ ACTIVITIES ^ -->
-
-      <!-- LOCATION -->
-      <section class="location" id="location">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 col-md-12">
-              <div class="text-center title">
-                <h2>LOCATION</h2>
-              </div>
-            </div>
-            <div class="col-lg-12 col-md-12 content">
-              <div class="col-lg-6 col-md-6 col-xs-12 intro-text">
-                <h4>Located in Santa Cruz, Guanacaste, the Pacific Coast of Costa Rica, on the western edge of the Nicoya Peninsula, approximately 4 hours from San José.<br><br>
-                There are many ways to get to us depending on how you’re traveling.</h4>
-                <div class="col-lg-12 col-md-12 text-center subtitle">
-                  <!-- <button class="btn btn-default btn-location" type="submit">SEE DIRECTIONS</button> -->
-                  <a class="btn btn-default btn-location" href="https://www.google.co.cr/maps/place/La+Norma+Guanacaste+Ecolodge/@10.225375,-85.749396,17z/data=!3m1!4b1!4m2!3m1!1s0x8f9e481919211daf:0x81f3210f3dd9fcb0?hl=es" target="_blank" role="button">SEE MAPS</a>
-            </div>
-              </div>
-              <div class="col-lg-6 col-md-6 col-xs-12 image-section img-location">
-                <img class="img-responsive" src="./images/imgMapEcolodge.png">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ^ LOCATION ^ -->
-
-      <!-- RESERVATION -->
-      <section class="reservation" id="reservation">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 col-md-12">
-              <div class="text-center title">
-                <h2>READY TO MAKE A RESERVATION?</h2>
-              </div>
-            </div>
-            <!-- Form -->
-            <div class="col-lg-offset-2 col-md-offset-2 col-lg-8 col-md-8">
-              <div class="col-md-12">
-                <div class="col-md-3">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">CHECK IN</label>
-                    <input class="form-control datepicker in" id="checkin">
-                  </div>
-                </div>
-                <div class="col-md-3 col-md-offset-1">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">CHECK OUT</label>
-                    <input class="form-control datepicker out" id="checkout">
-                  </div>
-                </div>
-                <div class="col-md-2 col-md-offset-3">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">GUESTS</label>
-                    <input type="number" class="form-control" id="guests">
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-12">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">NAME</label>
-                    <input class="form-control" id="name">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">EMAIL</label>
-                    <input class="form-control" id="email">
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-12">
-                <div class="col-md-7">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">COMMENTS</label>
-                    <textarea id="commet" class="form-control" rows="4"></textarea>
-                  </div>
-                </div>
-                <div class="col-md-4 col-md-offset-1 btn-submit-container">
-                  <a id="send-request" class="btn btn-default btn-paradise pull-right">ASK FOR A RESERVATION</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ^ RESERVATION ^ -->
-
-      
-    </div>
-
-    <div id="errorModal" class="modal fade"></div>
-    <div id="successModal" class="modal fade"></div>
+    </section>
 
     <footer>
       <div class="container">
